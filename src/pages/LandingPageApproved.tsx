@@ -29,13 +29,13 @@ const LandingPageApproved: FunctionComponent = () => {
         <div className={styles.carouselWrapper}>
           <Slider {...carouselSettings} className={styles.heroCarousel}>
             <div>
-              <img src="/pikaso_embed.jpeg" alt="Slide 1" className={styles.carouselImage} />
+              <img src="/pikaso_edit.jpeg" alt="Slide 1" className={styles.carouselImage} />
             </div>
             <div>
-              <img src="/pikaso_embed.jpeg" alt="Slide 2" className={styles.carouselImage} />
+              <img src="/pikaso_edit.jpeg" alt="Slide 2" className={styles.carouselImage} />
             </div>
             <div>
-              <img src="/pikaso_embed.jpeg" alt="Slide 3" className={styles.carouselImage} />
+              <img src="/pikaso_edit.jpeg" alt="Slide 3" className={styles.carouselImage} />
             </div>
           </Slider>
           {/* Black overlay on the images */}
