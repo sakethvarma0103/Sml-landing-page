@@ -35,7 +35,7 @@ const FrameComponent1: FunctionComponent<FrameComponent1Type> = ({
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 120) {
         setIsNavbarStickyVisible(true);
       } else {
         setIsNavbarStickyVisible(false);

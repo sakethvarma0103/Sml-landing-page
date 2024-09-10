@@ -32,10 +32,10 @@ const LandingPageApproved: FunctionComponent = () => {
               <img src="/pikaso_edit.jpeg" alt="Slide 1" className={styles.carouselImage} />
             </div>
             <div>
-              <img src="/pikaso_edit.jpeg" alt="Slide 2" className={styles.carouselImage} />
+              <img src="/slide_1.png" alt="Slide 2" className={styles.carouselImage} />
             </div>
             <div>
-              <img src="/pikaso_edit.jpeg" alt="Slide 3" className={styles.carouselImage} />
+              <img src="/slide_3.png" alt="Slide 3" className={styles.carouselImage} />
             </div>
           </Slider>
           {/* Black overlay on the images */}
@@ -155,7 +155,7 @@ const LandingPageApproved: FunctionComponent = () => {
       <FrameComponent6 />
       <FrameComponent9 />
       <FrameComponent10 />
-      <FrameComponent11 />
+?
       <section className={styles.footer}>
         <div className={styles.copyright2024}>
           Copyright © 2024, Shri Mahalakshmi Interior Design
