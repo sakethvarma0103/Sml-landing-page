@@ -1,0 +1,91 @@
+.designStep {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+}
+.stepIllustration {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 114.29px;
+  background-color: var(--color-dimgray-100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-7xs) var(--padding-2xs);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+}
+.design,
+.seeYourIdeasContainer {
+  align-self: stretch;
+  position: relative;
+}
+.design {
+  line-height: 150%;
+}
+.seeYourIdeasContainer {
+  margin: 0;
+  font-size: var(--font-size-13xl);
+  line-height: 2.625rem;
+  text-transform: uppercase;
+  color: var(--color-gray-300);
+  font-family: inherit;
+}
+.stepIllustrationParent {
+  width: 32.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xl) 0;
+  box-sizing: border-box;
+  gap: var(--gap-xs);
+  max-width: 100%;
+}
+.stepCardsChild {
+  width: 32.5rem;
+  position: relative;
+  border-radius: var(--br-160xl) var(--br-5xl) var(--br-5xl) var(--br-5xl);
+  max-height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}
+.stepCards {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-dimgray-200);
+  font-family: var(--font-timeless);
+}
+@media screen and (max-width: 1200px) {
+  .stepCards {
+    flex-wrap: wrap;
+  }
+  
+}
+@media screen and (max-width: 1050px) {
+  .seeYourIdeasContainer {
+    font-size: var(--font-size-7xl);
+    line-height: 2.063rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .designStep,
+  .seeYourIdeasContainer {
+    font-size: var(--font-size-lgi);
+    line-height: 1.813rem;
+  }
+  .seeYourIdeasContainer {
+    line-height: 1.563rem;
+  }
+}

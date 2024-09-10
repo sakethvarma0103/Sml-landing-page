@@ -1,0 +1,95 @@
+.stepCardsChild {
+  width: 32.5rem;
+  position: relative;
+  border-radius: var(--br-5xl) var(--br-201xl) var(--br-5xl) var(--br-5xl);
+  max-height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}
+.div {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+}
+.wrapper {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 114.29px;
+  background-color: var(--color-dimgray-100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-7xs) var(--padding-2xs);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+}
+.selection {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+}
+.chooseYourStyleContainer {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-13xl);
+  line-height: 2.625rem;
+  text-transform: uppercase;
+  color: var(--color-gray-300);
+  font-family: inherit;
+}
+.frameParent,
+.stepCards {
+  display: flex;
+  max-width: 100%;
+}
+.frameParent {
+  width: 32.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xl) 0;
+  box-sizing: border-box;
+  gap: var(--gap-xs);
+}
+.stepCards {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-dimgray-200);
+  font-family: var(--font-timeless);
+}
+@media screen and (max-width: 1200px) {
+  .stepCards {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .chooseYourStyleContainer {
+    font-size: var(--font-size-7xl);
+    line-height: 2.063rem;
+  }
+}
+@media only screen and (max-width: 768px)
+{
+  .stepCards{
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 450px) {
+  .chooseYourStyleContainer,
+  .div {
+    font-size: var(--font-size-lgi);
+    line-height: 1.813rem;
+  }
+  .chooseYourStyleContainer {
+    line-height: 1.563rem;
+  }
+}

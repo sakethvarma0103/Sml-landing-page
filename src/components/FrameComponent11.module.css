@@ -1,0 +1,632 @@
+.getInTouchContainer,
+.loremIpsumIs {
+  align-self: stretch;
+  position: relative;
+}
+.getInTouchContainer {
+  margin: 0;
+  font-size: inherit;
+  line-height: 130%;
+  text-transform: uppercase;
+  font-family: inherit;
+}
+.getInTouchContainer  b{
+  font-size: 48px;
+  font-weight: bold;
+  font-family: var(--font-timeless); 
+}
+.getInTouchContainer  span{
+  font-size: 48px;
+  font-weight: normal;
+  font-family: var(--font-timeless); 
+}
+.loremIpsumIs {
+  font-size: var(--font-size-base);
+  line-height: 150%;
+  color: var(--color-dimgray-200);
+}
+.touchTitle {
+  width: 24.688rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+  max-width: 100%;
+}
+.callIcon {
+  height: 3.75rem;
+  width: 3.75rem;
+  position: relative;
+  min-height: 3.75rem;
+}
+.call1,
+.detailValues {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 2.25rem;
+}
+.call1 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: var(--font-timeless);
+}
+.detailValues {
+  font-size: var(--font-size-base);
+  min-width: 7.5rem;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: var(--font-timeless);
+}
+.call,
+.phoneNumber {
+  display: flex;
+  justify-content: flex-start;
+}
+.phoneNumber {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-9xs);
+  min-width: 4.875rem;
+}
+.call {
+  align-self: stretch;
+  border-radius: var(--br-xs);
+  flex-direction: row;
+  align-items: center;
+  /* padding: 0 var(--padding-251xl) 0 0; */
+  gap: var(--gap-xl);
+}
+.info {
+  /* text-decoration: none; */
+  color: black;
+  font-weight: 500;
+}
+.info:hover,
+.info:focus {
+  color: black;
+}
+.email1,
+.infoshreemahalakshmicom {
+  position: relative;
+  line-height: 150%;
+}
+.email1 {
+  display: inline-block;
+  min-width: 3.25rem;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--font-timeless);
+}
+.infoshreemahalakshmicom {
+  font-size: 20px;
+  font-weight: normal;
+  font-family: var(--font-timeless);
+}
+.email,
+.emailId {
+  display: flex;
+  justify-content: flex-start;
+}
+.emailId {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-9xs);
+  min-width: 8.188rem;
+}
+.email {
+  align-self: stretch;
+  border-radius: var(--br-xs);
+  flex-direction: row;
+  align-items: center;
+  padding: 0 var(--padding-169xl) 0 0;
+  gap: var(--gap-xl);
+}
+.officeAddress,
+.vaPblicaMara {
+  position: relative;
+  line-height: 150%;
+}
+.officeAddress {
+  font-size: 20px;
+    font-weight: bold;
+    font-family: var(--font-timeless);
+}
+.vaPblicaMara {
+  align-self: stretch;
+  font-size: var(--font-size-base);
+  font-size: 20px;
+    font-weight: normal;
+    font-family: var(--font-timeless);
+}
+.address {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-9xs);
+  min-width: 15.813rem;
+}
+.address,
+.contactInfo,
+.location,
+.touchContent {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.location {
+  align-self: stretch;
+  border-radius: var(--br-xs);
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-xl);
+}
+.contactInfo,
+.touchContent {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contactInfo {
+  align-self: stretch;
+  gap: var(--gap-21xl);
+  font-size: var(--font-size-xl);
+}
+.touchContent {
+  width: 29.375rem;
+  gap: var(--gap-29xl);
+  min-width: 29.375rem;
+  margin-top: 3.65%;
+}
+.fullName {
+  position: relative;
+  line-height: 150%;
+  text-transform: capitalize;
+  display: inline-block;
+  min-width: 3.875rem;
+}
+.enterFullName {
+  width: 6.688rem;
+  border: 0;
+  outline: 0;
+  font-family: var(--font-timeless);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  height: 1.188rem;
+  position: relative;
+  color: var(--color-dimgray-200);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.fieldLabels,
+.formFields,
+.nameInput {
+  display: flex;
+  justify-content: flex-start;
+}
+.nameInput {
+  align-self: stretch;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-gray-100);
+  border: 1px solid var(--color-whitesmoke);
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-sm) var(--padding-base);
+}
+.fieldLabels,
+.formFields {
+  align-items: flex-start;
+  max-width: 140%;
+}
+.fieldLabels {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-3xs);
+}
+.formFields {
+  align-self: stretch;
+  flex-direction: row;
+}
+.yourEmail {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 4.125rem;
+}
+.enterYourEmail {
+  width: 7.063rem;
+  border: 0;
+  outline: 0;
+  font-family: var(--font-timeless);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  height: 1.188rem;
+  position: relative;
+  color: var(--color-dimgray-200);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.formFields1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.phoneNumer,
+.yourMessage {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 5.188rem;
+}
+.yourMessage {
+  min-width: 5.25rem;
+}
+.formContainer,
+.formFieldsChild {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.formFieldsChild {
+  border: 1px solid var(--color-whitesmoke);
+  background-color: var(--color-gray-100);
+  height: 6.25rem;
+  width: auto;
+  outline: 0;
+  border-radius: var(--br-9xs);
+  box-sizing: border-box;
+  flex-direction: row;
+  padding: var(--padding-base);
+  font-family: var(--font-timeless);
+  font-size: var(--font-size-base);
+  color: var(--color-dimgray-200);
+}
+.formContainer {
+  flex-direction: column;
+  gap: var(--gap-xl);
+  max-width: 100%;
+}
+.send {
+  width: 2.188rem;
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 150%;
+  display: inline-block;
+  font-family: var(--font-timeless);
+  color: var(--color-white);
+  text-align: center;
+  min-width: 2.188rem;
+}
+.sendButton {
+  cursor: pointer;
+  border: 1px solid var(--color-white);
+  padding: var(--padding-sm) var(--padding-12xl);
+  background-color: var(--color-dimgray-100);
+  width: 6.188rem;
+  border-radius: var(--br-25xl);
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.sendButton:hover {
+  background-color: var(--color-gray-200);
+  border: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+}
+.formContainerParent,
+.touchContentParent {
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.formContainerParent {
+  flex: 1;
+  box-shadow: 0 35px 35px rgba(0, 0, 0, 0.05);
+  background-color: var(--color-white);
+  flex-direction: column;
+  align-items: flex-start;
+  /* padding: var(--padding-13xl); */
+  padding: 4% 5%;
+  /* padding: 15% 6% 8% 6%; */
+  gap: var(--gap-13xl);
+  min-width: 23.125rem;
+  font-size: var(--font-size-sm);
+}
+.row {
+  margin: 5% 0;
+}
+.boxes {
+  padding: 5% 2%;
+  margin-top: 3%;
+  width: 120%;
+  background-color: whitesmoke;
+  border: 1.5px solid #EEEEEE;
+  border-radius: 6px;
+}
+
+.submitbutton {
+  padding: var(--padding-base) var(--padding-11xl);
+  border-radius: var(--br-31xl);
+  color: white;
+  background-color: var(--color-dimgray-100);
+  border: none;
+
+}
+.formnames {
+  font-size: 18px;
+  padding-bottom: 2%;
+  font-size: bold;
+}
+.boxes::placeholder {
+  font-family: 'Timeless', serif;
+  font-size: 14px;
+  color: #999;
+  opacity: 1;
+}
+.formnames1 {
+  font-size: 18px;
+  padding-bottom: 2%;
+}
+
+.touchContentParent {
+  align-self: stretch;
+  flex-direction: row;
+  /* align-items: center; */
+  padding: var(--padding-53xl) var(--padding-116xl);
+  gap: var(--gap-111xl);
+  flex-shrink: 0;
+  z-index: 4;
+  text-align: left;
+  font-size: var(--font-size-29xl);
+  color: var(--color-gray-300);
+  font-family: var(--font-timeless);
+}
+@media screen and (max-width: 1200px) {
+  .touchContent {
+    flex: 1;
+  }
+  .touchContentParent {
+    flex-wrap: wrap;
+    gap: var(--gap-46xl);
+    padding-left: var(--padding-48xl);
+    padding-right: var(--padding-48xl);
+    box-sizing: border-box;
+  }
+ 
+}
+@media screen and (max-width: 1050px) {
+  .getInTouchContainer {
+    font-size: var(--font-size-19xl);
+    line-height: 3.125rem;
+  }
+  .touchContent {
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .call,
+  .email {
+    box-sizing: border-box;
+  }
+  .contactInfo {
+    gap: var(--gap-xl);
+  }
+  .touchContent {
+    gap: var(--gap-5xl);
+  }
+  .formContainerParent {
+    gap: var(--gap-base);
+    padding-top: var(--padding-2xl);
+    padding-bottom: var(--padding-2xl);
+    box-sizing: border-box;
+    min-width: 100%;
+  }
+  .touchContentParent {
+    gap: var(--gap-13xl);
+    padding: 0 var(--padding-14xl);
+    padding-top: 15%;
+    padding-bottom: 15%;
+    box-sizing: border-box;
+  }
+  .getInTouchContainer  b{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: var(--font-timeless); 
+  }
+  .getInTouchContainer  span{
+    font-size: 24px;
+    font-weight: normal;
+    font-family: var(--font-timeless); 
+  }
+  .detailValues {
+    font-size: var(--font-size-base);
+    min-width: 7.5rem;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: var(--font-timeless);
+  }
+  .infoshreemahalakshmicom{
+    font-size: 16px;
+    font-weight: normal;
+    font-family: var(--font-timeless);
+  }
+  .vaPblicaMara {
+    align-self: stretch;
+    font-size: var(--font-size-base);
+    font-size: 16px;
+    font-weight: normal;
+    font-family: var(--font-timeless);
+}
+}
+@media screen and (max-width: 450px) {
+  .getInTouchContainer {
+    font-size: var(--font-size-10xl);
+    line-height: 2.313rem;
+  }
+  .call1 {
+    font-size: var(--font-size-base);
+    line-height: 1.5rem;
+  }
+  .call {
+    flex-wrap: nowrap;
+  }
+  .email1 {
+    font-size: var(--font-size-base);
+    line-height: 1.5rem;
+  }
+  .email {
+    flex-wrap: nowrap;
+  }
+  .officeAddress {
+    font-size: var(--font-size-base);
+    line-height: 1.5rem;
+  }
+  .location {
+    flex-wrap: nowrap;
+  }
+  .touchContentParent {
+    gap: var(--gap-base);
+  }
+  .boxes {
+    padding: 5% 2%;
+    width: 110%;
+    background-color: whitesmoke;
+    /* border: 2px solid black; */
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  margin: 5% 0;
+}
+
+/* Label styling */
+.formnames {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #333; /* Change the text color if needed */
+  /* display: none; */
+}
+
+/* Input and textarea styling */
+.boxes {
+  padding: 12px 15px;
+  width: 200%; 
+  /* background-color: #f8f9f5; */
+  /* border: 1px solid #e3e3e3; */
+  background-color: white;
+  border: none;
+  border-bottom: 2px solid black;
+  /* border-radius: 5px; */
+  border-radius: 0;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.boxes:hover,
+.boxes:focus {
+  border-color: #b1b1b1; /* Darker border on hover/focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Submit button styles */
+.submitbutton {
+  padding: 10px 25px;
+  background-color: #7d735f; /* Brown color for the button */
+  border: none;
+  border-radius: 25px; /* Rounded corners */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.submitbutton:hover {
+  background-color: #655b4d; /* Darker shade on hover */
+}
+@media screen and (min-width: 1300px) and (max-width: 1049px){
+  .boxes{
+    width: 200%;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 1050px) { 
+  .formContainerParent {
+    display: flex;
+    align-items: center;
+  }
+  .boxes {
+    padding: 5% 2%;
+    width: 100%;
+    background-color: whitesmoke;
+    /* border: 2px solid black; */
+}
+}
+
+@media screen and (min-width: 728px) and (max-width: 1050px) {
+  .formContainerParent {
+    display: flex;
+    align-items: start;
+}
+.boxes {
+  padding: 5% 2%;
+  margin-top: 3%;
+  width: 300%;
+  /* background-color: whitesmoke;
+  border: 1.5px solid #EEEEEE;
+  border-radius: 6px; */
+  background-color: white;
+  border: none;
+  border-bottom: 2px solid black;
+}
+}
+@media screen and (max-width: 786px) {
+  .formContainerParent {
+    display: flex;
+    align-items: start;
+}
+.boxes {
+  padding: 5% 2%;
+  width: 100%;
+  /* background-color: whitesmoke; */
+  /* border: 2px solid black; */
+  background-color: white;
+  border: none;
+  border-bottom: 1px solid black;
+}
+}
+@media screen and (max-width: 400px) { 
+  .formContainerParent {
+    display: flex;
+    align-items: start;
+}
+.boxes {
+  padding: 5% 2%;
+  width: 120%;
+  /* background-color: whitesmoke; */
+  /* border: 2px solid black; */
+  background-color: white;
+  border: none;
+  border-bottom: 1px solid black;
+}
+}

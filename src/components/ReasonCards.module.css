@@ -1,0 +1,71 @@
+.reasonCardsChild {
+  width: 3.813rem;
+  height: 3.825rem;
+  position: relative;
+}
+.weofferA15Year,
+.yearsWarranty {
+  position: relative;
+  line-height: 150%;
+}
+.weofferA15Year {
+  align-self: stretch;
+  font-size: var(--font-size-sm);
+  color: var(--color-dimgray-200);
+}
+.yearsWarrantyParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-5xs);
+}
+.readMore {
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 4.313rem;
+}
+.sendIcon {
+  height: 1.125rem;
+  width: 1.125rem;
+  position: relative;
+  object-fit: contain;
+}
+.readMoreParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  font-size: var(--font-size-sm);
+}
+.reasonCards {
+  flex: 1;
+  border-radius: var(--br-base);
+  background-color: var(--color-mistyrose);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-11xl);
+  box-sizing: border-box;
+  gap: var(--gap-11xl);
+  min-width: 20rem;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-6xl);
+  color: var(--color-gray-300);
+  font-family: var(--font-timeless);
+}
+@media screen and (max-width: 450px) {
+  .yearsWarranty {
+    font-size: var(--font-size-base);
+    line-height: 1.5rem;
+  }
+  .reasonCards {
+    gap: var(--gap-mini);
+  }
+}
