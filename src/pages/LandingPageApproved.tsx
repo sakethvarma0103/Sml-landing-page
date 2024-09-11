@@ -1,5 +1,5 @@
+import { useState, useEffect, useRef } from "react";
 import Slider from "react-slick";
-import { FunctionComponent, useRef, useState } from "react";
 import FrameComponent1 from "../components/FrameComponent1";
 import FrameComponent3 from "../components/FrameComponent3";
 import FrameComponent6 from "../components/FrameComponent6";
@@ -9,49 +9,33 @@ import styles from "./LandingPageApproved.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// Custom arrow components
-const NextArrow = (props: any) => {
-  const { onClick } = props;
-  return (
-    <div className={styles.nextArrow} onClick={onClick}>
-      <img src="/right-icon.svg" className={styles.rightarrow} alt="Next" />
-    </div>
-  );
-};
-
-const PrevArrow = (props: any) => {
-  const { onClick } = props;
-  return (
-    <div className={styles.prevArrow} onClick={onClick}>
-      <img src="/left-icon.svg" className={styles.leftarrow} alt="Previous" />
-    </div>
-  );
-};
-
-const LandingPageApproved: FunctionComponent = () => {
+const LandingPageApproved = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [isPlaying, setIsPlaying] = useState(true); // Track if the carousel is playing or paused
   const sliderRef = useRef<any>(null); // Reference to the Slider component
+  const [isFormVisible, setIsFormVisible] = useState(false); // Track form visibility on mobile
+
+  // Toggle form visibility
+  const toggleFormVisibility = () => {
+    setIsFormVisible(!isFormVisible);
+  };
+
+  useEffect(() => {
+    const updateIsMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    window.addEventListener("resize", updateIsMobile);
+    return () => window.removeEventListener("resize", updateIsMobile);
+  }, []);
 
   const carouselSettings = {
     dots: true,
     infinite: true,
-    speed: 3000, // Increased speed to 1000ms (1 second)
+    speed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    nextArrow: <NextArrow />, // Custom next arrow
-    prevArrow: <PrevArrow />, // Custom previous arrow
-  };
-
-  // Toggle Play/Pause
-  const togglePlayPause = () => {
-    if (isPlaying) {
-      sliderRef.current.slickPause();
-    } else {
-      sliderRef.current.slickPlay();
-    }
-    setIsPlaying(!isPlaying);
   };
 
   return (
@@ -74,33 +58,30 @@ const LandingPageApproved: FunctionComponent = () => {
 
           {/* Black overlay on the images */}
           <div className={styles.imageOverlay}></div>
-
-          {/* Pause/Play buttons */}
-          <div className={styles.playPauseButtons}>
-            <button onClick={togglePlayPause} className={styles.playPauseButton}>
-              <img
-                src={isPlaying ? "/pause-solid.svg" : "/play-solid.svg"}
-                alt={isPlaying ? "Pause" : "Play"}
-                className={styles.playPauseImage}
-              />
-            </button>
-          </div>
         </div>
 
         {/* Content on top */}
         <div className={styles.heroContent}>
           <div className={styles.heroTitleParent}>
             <div className={styles.heroTitle}>
-              <h1 className={styles.upgradingToMicroso}>
-                {`Where Elegance meets Luxury`}
-              </h1>
-              <div className={styles.notAllBlank}></div>
+              <h1 className={styles.upgradingToMicroso}>Where Elegance meets Luxury</h1>
             </div>
           </div>
 
-          {/* Form */}
-          <div className={styles.formContainerParent}>
-            <div
+          {/* Form Button */}
+          {isMobile && (
+            <button onClick={toggleFormVisibility} className={styles.formToggleButton}>
+              {isFormVisible ? "Close Form" : "Open Form"}
+            </button>
+          )}
+
+          {/* Form Container */}
+          <div
+            className={`${styles.formContainerParent} ${
+              isFormVisible ? styles.showForm : ""
+            }`}
+          >
+                        <div
               id="crmWebToEntityForm"
               className="zcwf_lblLeft crmWebToEntityForm"
               style={{ backgroundColor: "white", color: "black", maxWidth: "600px" }}
