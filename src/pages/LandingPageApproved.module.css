@@ -621,10 +621,6 @@ button {
 .playPauseButton:hover {
   background-color: rgba(240, 240, 240, 0.9);
 }
-/* new */
-.carouselWrapper {
-  /* position: relative; */
-}
 
 .nextArrow, .prevArrow, .arrowButton {
   position: absolute;
