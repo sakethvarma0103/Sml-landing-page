@@ -18,7 +18,6 @@ export type FrameComponentType = {
 const FrameComponent: FunctionComponent<FrameComponentType> = ({
   className = "",
   propWidth,
-  ellipse2706,
   propFlex,
   smithEnglish,
   quote,
