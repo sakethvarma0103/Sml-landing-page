@@ -30,7 +30,7 @@
   font-weight: normal;
 }
 .chooseTitle {
-  width: 73.125rem;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,11 +114,13 @@
 .reasonCardsParent {
   display: flex;
   justify-content: flex-start;
-  /* max-width: 100%; */
+  /*changes here */
   max-width: 106%;
 }
 .reasonCardsParent {
-  width: 73.125rem;
+  /* width: 73.125rem; */
+  width: 55%;
+  margin-left: 3%;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -131,12 +133,15 @@
 .chooseTitleParent {
   align-self: stretch;
   flex-direction: column;
-  align-items: center;
+  /* changes here */
+  /* align-items: center; */
+  align-items: flex-start;
   padding: var(--padding-53xl) var(--padding-xl) ;
   box-sizing: border-box;
   gap: var(--gap-29xl);
   flex-shrink: 0;
-  z-index: 2;
+  /* changes here 2*/
+  z-index: 0;
   text-align: center;
   font-size: var(--font-size-29xl);
   color: var(--color-gray-300);

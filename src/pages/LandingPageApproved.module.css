@@ -502,13 +502,18 @@ font-size: 18px;
   flex-direction: column;
   align-items: flex-start;
   /* padding: var(--padding-13xl); */
-  padding: 4% 4%;
+  padding: 4% 8%;
+  padding-left: 4%;
   /* padding: 15% 6% 8% 6%; */
   gap: var(--gap-13xl);
   min-width: 23.125rem;
   font-size: var(--font-size-sm);
   border-radius: 2%;
   z-index: 100;
+  position: fixed;
+  right: 8%;
+  top: 18%;
+  z-index: 1000 !important;
 }
 .row {
   margin: 5% 0;
@@ -558,4 +563,127 @@ font-size: 18px;
   font-size: var(--font-size-29xl);
   color: var(--color-gray-300);
   font-family: var(--font-timeless);
+}
+
+/* new styles */
+
+/* Common button styles */
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+/* Carousel Control Buttons (Left and Right Arrows) */
+.prevButton, .nextButton, .arrowButton {
+  position: absolute;
+  top: 50%; /* Vertically center */
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 24px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.prevButton {
+  left: 20px; /* Left arrow on the left side */
+}
+
+.nextButton {
+  right: 20px; /* Right arrow on the right side */
+}
+
+/* Hover effect for arrows */
+.prevButton:hover, .nextButton:hover {
+  background-color: rgba(240, 240, 240, 0.9);
+}
+
+/* Play/Pause Button at the bottom center */
+.playPauseButton {
+  position: absolute;
+  bottom: 20px; /* Bottom center for play/pause button */
+  left: 50%;
+  transform: translateX(-50%);
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 16px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Hover effect for play/pause button */
+.playPauseButton:hover {
+  background-color: rgba(240, 240, 240, 0.9);
+}
+/* new */
+.carouselWrapper {
+  /* position: relative; */
+}
+
+.nextArrow, .prevArrow, .arrowButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.nextArrow {
+  right: 30px;
+}
+
+.prevArrow {
+  left: 30px;
+}
+
+
+
+
+.nextArrow, .prevArrow {
+  background-color: #5e544a;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 30px;
+  position: absolute; /* Adjust position as needed */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Center vertically */
+  z-index: 10; /* Ensure the arrows are above other content */
+}
+
+.rightarrow {
+  width: 30px;
+  position: relative;
+    top: 20%;
+    left: 20%;
+    height: 40%;
+}
+
+.leftarrow {
+  width: 30px;
+  position: relative;
+    top: 20%;
+    left: 20%;
+    height: 40%;
+}
+
+.nextArrow {
+  right: 10px; /* Position on the right */
+}
+
+.prevArrow {
+  left: 10px; /* Position on the left */
+}
+.playPauseImage {
+  width: 24px; /* Adjust as needed */
+  height: 24px; /* Adjust as needed */
+  border: none;
+  background: none;
 }
