@@ -60,11 +60,11 @@ const LandingPageApproved = () => {
   const carouselSettings = {
     dots: true,
     infinite: true,
-    speed: 1500,
+    speed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 3000,
     nextArrow: <NextArrow />, // Custom next arrow
     prevArrow: <PrevArrow />, // Custom previous arrow
   };
