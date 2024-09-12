@@ -74,9 +74,9 @@ const FrameComponent1: FunctionComponent<FrameComponent1Type> = ({
             ref={sidebarRef}
             className={`${styles.navMenu} ${isMenuOpen ? styles.active : ""}`}
           >
-             <button className={styles.heroLink}>
+             {/* <button className={styles.heroLink}>
                 <b className={styles.learnMore}>Learn more</b>
-              </button>
+              </button> */}
           </div>
         </div>
       </header>
@@ -104,9 +104,9 @@ const FrameComponent1: FunctionComponent<FrameComponent1Type> = ({
             ref={sidebarRef}
             className={`${styles.navMenu} ${isMenuOpen ? styles.active : ""}`}
           >
-             <button className={styles.heroLink}>
+             {/* <button className={styles.heroLink}>
                 <b className={styles.learnMore}>Learn more</b>
-              </button>
+              </button> */}
           </div>
         </div>
       </div>

@@ -88,7 +88,7 @@ const LandingPageApproved = () => {
           </Slider>
 
           {/* Black overlay on the images */}
-          <div className={styles.imageOverlay}></div>
+          {/* <div className={styles.imageOverlay}></div> */}
 
           {/* Pause/Play buttons */}
           <div className={styles.playPauseButtons}>
