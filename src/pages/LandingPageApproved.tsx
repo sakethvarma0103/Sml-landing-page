@@ -80,10 +80,12 @@ const LandingPageApproved = () => {
               <img src="/pikaso_edit.jpeg" alt="Slide 1" className={styles.carouselImage} />
             </div>
             <div>
-              <img src="/slide_1.png" alt="Slide 2" className={styles.carouselImage} />
+              {/* <img src="/slide_1.png" alt="Slide 2" className={styles.carouselImage} /> */}
+              <img src="/images-001.jpg" alt="Slide 2" className={styles.carouselImage} />
             </div>
             <div>
-              <img src="/slide_3.png" alt="Slide 3" className={styles.carouselImage} />
+              {/* <img src="/slide_3.png" alt="Slide 3" className={styles.carouselImage} /> */}
+              <img src="/images-002.jpg" alt="Slide 3" className={styles.carouselImage} />
             </div>
           </Slider>
 

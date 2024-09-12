@@ -13,39 +13,22 @@ const FrameComponent1: FunctionComponent<FrameComponent1Type> = ({
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
   const sidebarRef = useRef<HTMLDivElement>(null);
-  const desktopNavbarHeight = 85; // Adjust this value to your desktop navbar height
-  const mobileNavbarHeight = 40; // Adjust this value to your mobile navbar height
-  const navbarHeight = isMobile ? mobileNavbarHeight : desktopNavbarHeight;
-
-
 
   useEffect(() => {
     const updateIsMobile = () => {
       setIsMobile(window.innerWidth <= 768);
     };
-
-    updateIsMobile(); // Initialize the state on mount
     window.addEventListener("resize", updateIsMobile);
-
     return () => window.removeEventListener("resize", updateIsMobile);
   }, []);
 
-
-
-
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 120) {
-        setIsNavbarStickyVisible(true);
-      } else {
-        setIsNavbarStickyVisible(false);
-      }
+      setIsNavbarStickyVisible(window.scrollY > 120);
     };
-
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isMenuOpen]);
+  }, []);
 
   return (
     <section
@@ -61,27 +44,20 @@ const FrameComponent1: FunctionComponent<FrameComponent1Type> = ({
             <img
               className={styles.navbarChild}
               loading="lazy"
-              alt=""
+              alt="logo"
               src="/logo-04.png"
             />
           </a>
-
-          {/* Hamburger menu */}
-
-
-          {/* Navigation menu */}
-          <div
-            ref={sidebarRef}
-            className={`${styles.navMenu} ${isMenuOpen ? styles.active : ""}`}
-          >
-             {/* <button className={styles.heroLink}>
+          <div>
+            <button className={styles.heroLink}>
+              <a>
                 <b className={styles.learnMore}>Learn more</b>
-              </button> */}
+              </a>
+            </button>
           </div>
         </div>
       </header>
       <div className={styles.topContentSticky}>
-        {/* Sticky Navbar */}
         <div
           className={`${styles.navbarsticky} ${
             isNavbarStickyVisible ? styles.visible : ""
@@ -91,22 +67,16 @@ const FrameComponent1: FunctionComponent<FrameComponent1Type> = ({
             <img
               className={styles.navbarChild}
               loading="lazy"
-              alt=""
+              alt="sticky logo"
               src="/logo-04.png"
             />
           </a>
-
-          {/* Hamburger menu */}
-
-
-          {/* Navigation menu */}
-          <div
-            ref={sidebarRef}
-            className={`${styles.navMenu} ${isMenuOpen ? styles.active : ""}`}
-          >
-             {/* <button className={styles.heroLink}>
+          <div>
+            <button className={styles.heroLink}>
+              <a>
                 <b className={styles.learnMore}>Learn more</b>
-              </button> */}
+              </a>
+            </button>
           </div>
         </div>
       </div>

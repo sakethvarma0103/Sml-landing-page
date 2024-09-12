@@ -609,8 +609,8 @@ button {
   transform: translateX(-50%);
   /* background-color: rgba(255, 255, 255, 0.8); */
   background-color: white;
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
   border-radius: 50%;
   padding: 10px;
   font-size: 16px;
@@ -644,7 +644,8 @@ button {
 
 
 .nextArrow, .prevArrow {
-  background-color: #5e544a;
+  /* background-color: #5e544a; */
+  background-color: none;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -653,6 +654,8 @@ button {
   top: 50%; /* Center vertically */
   transform: translateY(-50%); /* Center vertically */
   z-index: 10; /* Ensure the arrows are above other content */
+  height: 50%;
+  /* width: 20%; */
 }
 
 .rightarrow {
@@ -727,21 +730,23 @@ button {
   }
 }
 /* Hide the form toggle button on desktop */
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .formContainerParent {
-    position: fixed;
-    top: 20%;
-    right: -100%; /* Initially hidden off-screen */
+    position: absolute;
+    /* display: flex; */
+    display: none;
+    top: -10%;
+    left: -6%;
     width: 80%;
     background-color: white;
     transition: right 0.3s ease-in-out;
-    z-index: 1000;
+    z-index: 100 !important;
   }
   .showForm {
-    right: 0; /* Slide in from the left */
+    left: 0;
   }
   .formToggleButton {
-    display: block;
+    /* display: block; */
   }
   .heroShapeParent {
     position: relative;
@@ -766,15 +771,6 @@ button {
     /* min-width: 31rem; */
     color: white;
 }
-  /* .imageOverlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: none;
-    z-index: 0;
-} */
  
 .nextArrow, .prevArrow, .arrowButton {
   position: absolute;
@@ -794,14 +790,14 @@ button {
 } */
 .playPauseButton {
   position: absolute;
-  bottom: 0px; /* Bottom center for play/pause button */
+  bottom: 0px;
   bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
   /* background-color: rgba(255, 255, 255, 0.8); */
   background-color: white;
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
   border-radius: 50%;
   padding: 10px;
   font-size: 16px;
@@ -828,6 +824,7 @@ button {
 }
 /* Common style for arrows */
 .nextArrow, .prevArrow {
+  /* background-color: #5e544a; */
   position: absolute;
   top: 50%;
   transform: translateY(-50%); /* Center vertically */
@@ -836,12 +833,9 @@ button {
   z-index: 10; /* Ensure they are above other elements */
 }
 
-/* Position for next arrow */
 .nextArrow {
   right: 10px; /* Adjust as needed */
 }
-
-/* Position for previous arrow */
 .prevArrow {
   left: 10px; /* Adjust as needed */
 }
@@ -849,4 +843,33 @@ button {
 }
 .bannerImage {
   object-fit: cover;
+}
+@media screen and (min-width: 779px) and (max-width: 1432px) {
+  .nextArrow, .prevArrow {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%); /* Center vertically */
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10; /* Ensure they are above other elements */
+  }
+  .playPauseButton {
+    position: absolute;
+    bottom: 0px; /* Bottom center for play/pause button */
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    background-color: white;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .carouselImage {
+    height: 100vh;
+  }
 }

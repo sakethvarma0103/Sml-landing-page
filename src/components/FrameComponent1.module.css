@@ -12,7 +12,8 @@
   padding: var(--padding-base) var(--padding-11xl);
   background-color: #efe79c;
   border-radius: var(--br-31xl);
-  display: flex;
+  /* display: flex; */
+  display: none;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -596,7 +597,7 @@ html {
   .navbarsticky{
     height: 11%;
     width: 82%;
-    gap: 70%; 
+    gap: 60%; 
     top: -1%;
     left: -1%;
     z-index: 98;
@@ -612,5 +613,21 @@ html {
   a {
     -webkit-tap-highlight-color: transparent !important;outline: none !important; 
   }
-
-};
+  .heroLink {
+    display: flex; /* Make it visible on small screens */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px; /* Adjust padding for small screens */
+    background-color: #efe79c !important;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: var(--font-timeless);
+    white-space: nowrap;
+    margin-right: 5%;
+  }
+  .heroLink:hover {
+    background-color: #d6cf82;
+  }
+  
+}
